@@ -12,7 +12,6 @@ function moveElementToEnd(array, toMove) {
         if (array[right] === toMove) right--;
       }
     }
-  
     return array;
   }
   
