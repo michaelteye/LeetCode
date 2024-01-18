@@ -17,3 +17,4 @@ function majorityElement(array) {
     }
     return answer;
 }
+
