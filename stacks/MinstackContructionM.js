@@ -8,8 +8,8 @@ class MinMaxStack{
         const newMinMax = {min:value, max:value}
         console.log('the newMinMax value is >>>', newMinMax)
         if(this.minmaxstack.length > 0){
-            let lastMinMax = this.minmaxstack[this.minmaxstack.length -1]
-            // console.log('the lastMinMax is >>>', lastMinMax)
+            let lastMinMax = this.minmaxstack[this.minmaxstack.length-1]
+            console.log('the lastMinMax is >>>', lastMinMax)
             newMinMax.min = Math.min(lastMinMax.min, value)
             newMinMax.max = Math.max(lastMinMax.max, value)
         }
@@ -46,13 +46,13 @@ minMaxStack.push(6)
 minMaxStack.push(1)
 
 console.log('the Peek is >>>', minMaxStack.peek())
-console.log('the Peek is >>>', minMaxStack.getMin())
-console.log('the Peek is >>>', minMaxStack.getMax())
+console.log('the min value is >>>', minMaxStack.getMin())
+console.log('the max value is >>>', minMaxStack.getMax())
 
 minMaxStack.pop()
 console.log('the Peek is >>>', minMaxStack.peek())
-console.log('the Peek is >>>', minMaxStack.getMin())
-console.log('the Peek is >>>', minMaxStack.getMax())
+console.log('the min value is >>>', minMaxStack.getMin())
+console.log('the max value is >>>', minMaxStack.getMax())
 
 
 
