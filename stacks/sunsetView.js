@@ -29,7 +29,6 @@ function sunsetViews(buildings, direction) {
     // If the view is EAST, reverse the result array to get the correct order
     return eastward ? result.reverse() : result;
 }
-
 // Example usage:
 let buildings = [3, 5, 1, 4, 2];
 let direction = "WEST";

@@ -1,15 +1,18 @@
-// const weeklysales = [23, 12, 10, 5, 1]
-// const totalsales = new Array(weeklysales.length).fill(0)
-// console.log(totalsales)
+const findMaxBid = function(bids){
+  let maxBid = bids[0]
+  mindBid = bids[0]
 
-// for(let i = 0; i < weeklysales.length; i++){
-//     console.log('the totalsale is >>>',totalsales[i])
-//     console.log('the weeklysales is >>>',weeklysales[i])
-//     let sum =  totalsales[i] += weeklysales[i]
-//     console.log('the sum is >>',sum)
-// }
-
-// console.log(totalsales)
+  for(let i =0; i < bids.length; i++){
+    for(let j = 0; j < bids.length; j++){
+      if(bids[i] > bids[j] && bids[i] > maxBid){
+        maxBid = bids[i]
+      }else if(bids[i] < bids[j] && bids[i] < mindBid){
+        mindBid = bids[i]
+      }
+    }
+  }
+  return [mindBid, maxBid]
+}
 
 function arrayOfProducts(array) {
     // Write your code here.
